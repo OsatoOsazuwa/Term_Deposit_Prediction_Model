@@ -10,6 +10,7 @@ This project aims to predict whether a customer will subscribe to a term deposit
 6. [Model Evaluation](#model-evaluation)
 7. [Results](#results)
 8. [How to Run](#how-to-run)
+9. [Saved Model](#saved-model)
 
 ## Project Overview
 The goal of this project is to build a machine learning model to predict whether a customer will subscribe to a term deposit (`"yes"` or `"no"`) based on demographic and behavioral features. The model is built using a **Neural Network** and evaluated using classification metrics like **accuracy**, **precision**, **recall**, and **F1-score**.
@@ -83,4 +84,17 @@ The model achieved an overall **accuracy of 84%**. Precision and recall for clas
 1. Clone this repository:
    ```bash
    git clone https://github.com/OsatoOsazuwa/bank-deposit-prediction.git
+
+## Saved Model
+The trained model has been saved as a .keras file. You can load it and use it to make predictions on new data.
+
+Example of loading the saved model:
+from tensorflow.keras.models import load_model
+
+# Load the saved model
+model = load_model('bank_deposit_model.h5')
+
+# Make predictions with new data
+predictions = model.predict(X_new_data)
+
 
