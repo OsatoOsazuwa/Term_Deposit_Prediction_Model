@@ -84,7 +84,7 @@ The model achieved an overall **accuracy of 84%**. Precision and recall for clas
 1. Clone this repository:
    ```bash
    git clone https://github.com/OsatoOsazuwa/bank-deposit-prediction.git
-
+   
 ## Saved Model
 The trained model has been saved as a .keras file. You can load it and use it to make predictions on new data.
 
@@ -92,7 +92,7 @@ Example of loading the saved model:
 from tensorflow.keras.models import load_model
 
 # Load the saved model
-model = load_model('bank_deposit_model.h5')
+model = load_model('deposit_predictionmodel.keras')
 
 # Make predictions with new data
 predictions = model.predict(X_new_data)
